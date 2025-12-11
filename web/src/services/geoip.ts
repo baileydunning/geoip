@@ -8,7 +8,7 @@ import { GeoIPResponse, GeoIPError } from '@/types/geoip';
  */
 const GEOIP_ENDPOINT =
   process.env.NEXT_PUBLIC_GEOIP_ENDPOINT ??
-  'http://localhost:9926/GeoIPLookup';
+  '/GeoIPLookup';
 
 /**
  * Shape of the backend GeoIPLookup response
