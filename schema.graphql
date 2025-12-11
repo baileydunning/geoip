@@ -1,0 +1,13 @@
+type GeoIPRange @table(database: "data") @export(name: "geoip_range") {
+  id: ID @primaryKey
+  ipFrom: Integer @indexed
+  ipTo:   Integer @indexed
+  countryCode: String @indexed
+  countryName: String
+  regionName:  String
+  cityName:    String
+  latitude:    Float
+  longitude:   Float
+  zipCode:     String
+  timeZone:    String
+}
